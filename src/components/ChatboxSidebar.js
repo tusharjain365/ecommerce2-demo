@@ -12,6 +12,7 @@ const ChatboxSidebar = ({ toggleProductsWidth }) => {
   const location = useLocation();
   const [isFirstOpen, setIsFirstOpen] = useState(true);
   const [shouldPathCalled,setShouldPathCalled]=useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -87,6 +88,7 @@ const getResponseKey = (command) => {
   const handleSendMessage =async (e) => {
     e.preventDefault();
     if (input.trim()) {
+      setIsLoading(true);
       const newMessage = { text: input, sender: "user" };
       setMessages((prevMessages) => [...prevMessages, newMessage]);
       setInput("");
@@ -95,7 +97,7 @@ const getResponseKey = (command) => {
         const response = await axios.post('https://ai-salesman.com/chat/query', { // Replace with your actual API endpoint
           message: input,
         });
-  
+
         const { route, componentData,responseText } = response.data; // Adjust based on your backend response structure
   
         // Navigate to the returned route with component data
@@ -107,6 +109,8 @@ const getResponseKey = (command) => {
   
       } catch (error) {
         console.error("Error fetching route:", error);
+      }finally {
+        setIsLoading(false);
       }
 
       // const command = parseUserInput(input);
@@ -277,10 +281,12 @@ const getResponseKey = (command) => {
                 onChange={handleInputChange}
                 style={inputStyle}
                 placeholder="Type your message..."
+                disabled={isLoading}
               />
               <button
                 type="submit"
                 style={buttonSendStyle}
+                disabled={isLoading}
               >
                 Send
               </button>

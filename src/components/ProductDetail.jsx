@@ -36,7 +36,8 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://ai-salesman.com/products/${id}`); // Fetch single product based on ID
+        const response = await axios.get(`https://ai-salesman.com/product/${id}`); // Fetch single product based on ID
+        console.log(response.data);
         setProduct(response.data); // Assuming response data contains the product
       } catch (err) {
         setError('Failed to load product.'); // Handle errors appropriately
@@ -46,11 +47,11 @@ const ProductDetail = () => {
     };
 
     // Check if location.state has the product data
-    if (location.state && location.state.product) {
-      setProduct(location.state.product); // Use product from location.state
+    if (location.state.componentData) {
+      setProduct(location.state.componentData); // Use product from location.state
     } else {
-        // fetchProduct(); // Fetch product from backend if not available in state
-        setProduct(sinproduct);
+        fetchProduct(); // Fetch product from backend if not available in state
+        // setProduct(sinproduct);
     }
     setLoading(false); // Set loading to false as we already have product data
   }, [location.state, id]);

@@ -60,27 +60,28 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-        console.log('this is products');
         setLoading(true);
       try {
-        const response = await axios.get('/products'); // Adjust the API endpoint if needed
+        const response = await axios.get('https://ai-salesman.com/products'); 
         console.log(response);
-        setProducts(response.data); // Assuming response data contains the products array
+        setProducts(response.data);
       } catch (err) {
-        setError('Failed to load products.'); // Handle errors appropriately
+        console.log('error');
+        setError('Failed to load products.'); 
       } finally {
         setLoading(false); // Set loading to false after request completion
       }
     };
 
     // Check if location.state is empty
-    if (location.state && location.state.componentData && location.state.componentData.products) {
-      setProducts(location.state.componentData.products); // Use products from location.state
+    if (location.state && location.state.componentData) {
+        setProducts(location.state.componentData); // Use products from location.state
     } else {
         fetchProducts(); // Fetch products from backend
         // setProducts(statproducts);
     }
     setLoading(false); // Set loading to false as we already have products
+    // console.log(location.state.componentData);
   }, [location.state]);
 
   if (loading) {
