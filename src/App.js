@@ -11,6 +11,9 @@ import Cart from "./components/Cart";
 import Preloader from "./components/Preloader";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
+import About from "./components/About";
+import Privacy from "./components/Privacy";
+import Terms from "./components/Terms";
 
 /**
  * Owl Carousel initialization function
@@ -104,6 +107,9 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
         <Footer />
       </div>

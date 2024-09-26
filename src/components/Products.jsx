@@ -60,9 +60,10 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
+        console.log('this is products');
         setLoading(true);
       try {
-        const response = await axios.get('https://ai-salesman.com/products'); // Adjust the API endpoint if needed
+        const response = await axios.get('/products'); // Adjust the API endpoint if needed
         console.log(response);
         setProducts(response.data); // Assuming response data contains the products array
       } catch (err) {
@@ -272,7 +273,7 @@ const Products = () => {
                                         <div className="card product-single">
                                             <figure className="product-img">
                                                 <Link to={`/product/${product.id}`}><img src={product?.image} className="img-fluid" alt="AlgoBazar" /></Link>
-                                                {product && product.sale !== 0 && <span className="product-badge-red">{product.sale}% sale</span>}
+                                                {/* {product && product.sale !== 0 && <span className="product-badge-red">{product.sale}% sale</span>} */}
                                                 <div className="product-overlay">
                                                     <ul className="list-inline">
                                                         <li className="list-inline-item"><a href="#" title="Add to Basket"><i className="bi bi-cart-plus-fill"></i></a></li>
@@ -284,7 +285,7 @@ const Products = () => {
                                             <div className="card-body">
                                                 <p className="product-info">{product?.category}</p>
                                                 <Link to={`/product/${product?.id}`}>
-                                                    <h3 className="product-name">{product?.name}</h3>
+                                                    <h3 className="product-name">{product?.title}</h3>
                                                 </Link>
                                                 <div className="d-flex">
                                                     <div className="product-price"><del>${product?.originalPrice}</del>${product?.price}</div>

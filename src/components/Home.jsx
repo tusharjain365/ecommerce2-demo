@@ -204,15 +204,15 @@ const Home = () => {
                             </ol>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <Link to="product-detail.html"><img src="/assets/images/banner/01.jpg"
+                                    <Link to="/products"><img src="/assets/images/banner/01.jpg"
                                             className="img-fluid d-block w-100" alt="pallihut"/></Link>
                                 </div>
                                 <div className="carousel-item">
-                                    <Link to="product-detail.html"><img src="/assets/images/banner/02.jpg"
+                                    <Link to="/products"><img src="/assets/images/banner/02.jpg"
                                             className="img-fluid d-block w-100" alt="pallihut"/></Link>
                                 </div>
                                 <div className="carousel-item">
-                                    <Link to="product-detail.html"><img src="/assets/images/banner/03.jpg"
+                                    <Link to="/products"><img src="/assets/images/banner/03.jpg"
                                             className="img-fluid d-block w-100" alt="pallihut"/></Link>
                                 </div>
                             </div>
@@ -342,21 +342,21 @@ const Home = () => {
                     <div className="exclusive-single-content">
                         <h2>Get up to <span>20% OFF</span></h2>
                         <h3>Skin Care Products</h3>
-                        <Link to="product-detail.html" className="btn btn-red">Shop Now</Link>
+                        <Link to="/products" className="btn btn-red">Shop Now</Link>
                     </div>
                 </div>
                 <div className="exclusive-single es-bg-2">
                     <div className="exclusive-single-content">
                         <h2>Get up to <span>30% OFF</span></h2>
                         <h3>Makeup Products</h3>
-                        <Link to="product-detail.html" className="btn btn-red">Shop Now</Link>
+                        <Link to="/products" className="btn btn-red">Shop Now</Link>
                     </div>
                 </div>
                 <div className="exclusive-single es-bg-3">
                     <div className="exclusive-single-content">
                         <h2>Get up to <span>50% OFF</span></h2>
                         <h3>Cosmetic Products</h3>
-                        <Link to="product-detail.html" className="btn btn-red">Shop Now</Link>
+                        <Link to="/products" className="btn btn-red">Shop Now</Link>
                     </div>
                 </div>
             </div>
@@ -381,7 +381,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -389,7 +389,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Clear glass perfume 200ml</h3>
                             </Link>
                             <div className="d-flex">
@@ -401,7 +401,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/02.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/02.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <div className="product-overlay">
                                 <ul className="list-inline">
@@ -409,7 +409,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -417,7 +417,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Mobile & Gadgets</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Silver iphone</h3>
                             </Link>
                             <div className="d-flex">
@@ -429,7 +429,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/03.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/03.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">10% sale</span>
                             <div className="product-overlay">
@@ -438,7 +438,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -446,7 +446,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Watches & Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Golden wristwatch</h3>
                             </Link>
                             <div className="d-flex">
@@ -458,7 +458,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/04.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/04.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <div className="product-overlay">
                                 <ul className="list-inline">
@@ -466,7 +466,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -474,7 +474,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Grocery</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Cherry tomatoes</h3>
                             </Link>
                             <div className="d-flex">
@@ -486,7 +486,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/05.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/05.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">20% sale</span>
                             <div className="product-overlay">
@@ -495,7 +495,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -503,7 +503,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Computer & Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Asus Laptop</h3>
                             </Link>
                             <div className="d-flex">
@@ -527,7 +527,7 @@ const Home = () => {
                 <div className="owl-carousel product-carousel">
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/06.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/06.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-green">New</span>
                             <div className="product-overlay">
@@ -536,7 +536,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -544,7 +544,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">D&G perfume</h3>
                             </Link>
                             <div className="d-flex">
@@ -556,7 +556,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/07.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/07.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-green">New</span>
                             <div className="product-overlay">
@@ -565,7 +565,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -573,7 +573,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Watches & Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Wrist Watch</h3>
                             </Link>
                             <div className="d-flex">
@@ -585,7 +585,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/08.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/08.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-green">New</span>
                             <div className="product-overlay">
@@ -594,7 +594,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -602,7 +602,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Computer & Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Apple Notebook</h3>
                             </Link>
                             <div className="d-flex">
@@ -614,7 +614,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/09.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/09.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-green">New</span>
                             <div className="product-overlay">
@@ -623,7 +623,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -631,7 +631,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">N's Channel Perfume</h3>
                             </Link>
                             <div className="d-flex">
@@ -643,7 +643,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/10.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/10.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-green">New</span>
                             <div className="product-overlay">
@@ -652,7 +652,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -660,7 +660,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Sports Shoe</h3>
                             </Link>
                             <div className="d-flex">
@@ -684,7 +684,7 @@ const Home = () => {
                 <div className="owl-carousel product-carousel">
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/11.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/11.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">5% off</span>
                             <div className="product-overlay">
@@ -693,7 +693,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -701,7 +701,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Food & Beverages</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Soft Drinks</h3>
                             </Link>
                             <div className="d-flex">
@@ -713,7 +713,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/12.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/12.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">50% off</span>
                             <div className="product-overlay">
@@ -722,7 +722,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -730,7 +730,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Health & Beauty</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Ordinary combo</h3>
                             </Link>
                             <div className="d-flex">
@@ -742,7 +742,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/13.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/13.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">15% off</span>
                             <div className="product-overlay">
@@ -751,7 +751,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -759,7 +759,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Venus Mascara</h3>
                             </Link>
                             <div className="d-flex">
@@ -771,7 +771,7 @@ const Home = () => {
                     </div>
                     <div className="card product-single">
                         <figure className="product-img">
-                            <Link to="product-detail.html"><img src="/assets/images/products/10.jpg" className="img-fluid"
+                            <Link to="/products"><img src="/assets/images/products/10.jpg" className="img-fluid"
                                     alt="AlgoBazar"/></Link>
                             <span className="product-badge-red">25% off</span>
                             <span className="product-badge-right-green">new</span>
@@ -781,7 +781,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -789,7 +789,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">Sports Shoe</h3>
                             </Link>
                             <div className="d-flex">
@@ -811,7 +811,7 @@ const Home = () => {
                                                 className="bi bi-cart-plus-fill"></i></Link></li>
                                     <li className="list-inline-item"><Link to="/" title="Add to Wishlist"><i
                                                 className="fas fa-heart"></i></Link></li>
-                                    <li className="list-inline-item"><Link to="product-detail.html" title="View"><i
+                                    <li className="list-inline-item"><Link to="/products" title="View"><i
                                                 className="fas fa-eye"></i></Link>
                                     </li>
                                 </ul>
@@ -819,7 +819,7 @@ const Home = () => {
                         </figure>
                         <div className="card-body">
                             <p className="product-info">Fashion Accessories</p>
-                            <Link to="product-detail.html">
+                            <Link to="/products">
                                 <h3 className="product-name">N's Channel Perfume</h3>
                             </Link>
                             <div className="d-flex">
